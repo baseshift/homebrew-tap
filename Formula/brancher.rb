@@ -3,7 +3,7 @@ class Brancher < Formula
   homepage "https://baseshift.com"
   version "0.1.0-6583b7e51c35"
   url "https://dl.baseshift.com/brancher/brancher-0.1.0-6583b7e51c35-darwin-arm64"
-  sha256 "22b23c661ef2b0d23a5079e963960899b724e9ab8ea4e5a878d273cca6fe74ff"
+  sha256 "73c032755f5c009173ecb6e4e3984d7f252a44750ff557433c305a41a300ce2e"
 
   def install
     bin.install "brancher-0.1.0-6583b7e51c35-darwin-arm64" => "brancher"
