@@ -1,9 +1,9 @@
 class Brancher < Formula
   desc "Local database branching for PostgreSQL, MySQL, and MongoDB"
   homepage "https://baseshift.com"
-  url "https://dl.baseshift.com/brancher/brancher-0.10.1-5338fa21bdaf-darwin-arm64"
-  version "0.10.1-5338fa21bdaf"
-  sha256 "fb5432485b39f20ee1a258172809b87c710b41e47baf45f0559ad6cf63b93256"
+  url "https://dl.baseshift.com/brancher/brancher-0.11.0-4454f68c2e18-darwin-arm64"
+  version "0.11.0-4454f68c2e18"
+  sha256 "361076482d6cfbaa7879e542cf7ea6251b56770c4239910be81059ebc531f8bd"
 
   depends_on "baseshift/tap/protobuf@21"
   depends_on "boost"
@@ -11,10 +11,10 @@ class Brancher < Formula
   depends_on "zstd"
 
   def install
-    bin.install "brancher-0.10.1-5338fa21bdaf-darwin-arm64" => "brancher"
+    bin.install "brancher-0.11.0-4454f68c2e18-darwin-arm64" => "brancher"
   end
 
   test do
-    assert_match "0.10.1-5338fa21bdaf", shell_output("#{bin}/brancher version")
+    assert_match "0.11.0-4454f68c2e18", shell_output("#{bin}/brancher version")
   end
 end
